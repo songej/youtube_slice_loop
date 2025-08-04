@@ -43,7 +43,7 @@ This lightweight Chrome extension is designed for anyone who needs to practice a
 
 This extension's source code is licensed under the **MIT License**.
 
-The "Repeat" icon used in this extension is from the Iconoir icon set and is licensed under the **[CC BY 4.0)](https://iconoir.com/license)**.
+The "Repeat" icon used in this extension is from the Iconoir icon set and is licensed under the **[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)**.
 
 - **Icon by:** [Iconoir](https://iconoir.com/)
 - **Source:** [Iconfinder](https://www.iconfinder.com/icons/12539340/repeat_arrows_re_direction_sign_repeat_sign_icon)
