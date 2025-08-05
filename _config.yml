@@ -1,0 +1,4 @@
+# _config.yml
+theme: minima
+markdown: kramdown
+title: Youtube Slice Loop
