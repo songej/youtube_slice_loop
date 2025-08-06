@@ -90,8 +90,7 @@ Please submit bug reports or feature requests through the [GitHub Issues](https:
 
 This project is licensed under the **[MIT License](LICENSE)**.
 
-An icon used in this extension was created by **Iconoir** and sourced from [IconFinder](https://www.iconfinder.com/icons/12539340/repeat_arrows_re_direction_sign_repeat_sign_icon). It is used under the terms of the **[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)** license.
-
+An icon used in this extension was created by **khulqi Rosyid** and sourced from [IconFinder](https://www.iconfinder.com/icons/12539385). It is used under the terms of the **[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)** license.
 
 ---
 *DISCLAIMER: Slice & Loop for YouTube™ is an independent project. It is not affiliated with, sponsored, endorsed, or in any way officially associated with YouTube or Google LLC. YouTube™ is a trademark of Google LLC, and its use is for reference purposes only, indicating compatibility with the service.*
