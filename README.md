@@ -1,8 +1,8 @@
 # Slice & Loop for YouTube™
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Current Version](https://img.shields.io/badge/version-v1.1-green.svg)](https://github.com/songej/youtube_slice_loop/releases) [![Chrome Web Store](https://img.shields.io/badge/Chrome%20Web%20Store-Available%20Now-blue.svg?logo=google-chrome&logoColor=white)](https://chrome.google.com/webstore/detail/your-extension-id)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Current Version](https://img.shields.io/badge/version-v1.1-green.svg)](https://github.com/songej/youtube_slice_loop/releases) [![Chrome Web Store](https://img.shields.io/badge/Chrome%20Web%20Store-Available%20Now-blue.svg?logo=google-chrome&logoColor=white)](https://chrome.google.com/webstore/detail/[YOUR_EXTENSION_ID_HERE])
 
-> **Status**: 🟢 Active | **Type**: 🧩 Chrome Extension | **Updated**: 📅 2025-08-06
+> **Status**: 🟢 Active | **Type**: 🧩 Chrome Extension | **Updated**: 📅 2025-08-07
 
 ## 📜 Abstract
 
@@ -31,17 +31,13 @@ This extension is designed for individuals who benefit from the detailed and rep
 
 ## 🧰 Tech Stack
 
-- **JavaScript (Vanilla)**  
-  Core logic is implemented using plain JavaScript (`background.js`, `content.js`, `popup.js`) to keep the bundle size minimal and avoid build dependencies.
+- **JavaScript (Vanilla)** Core logic is implemented using plain JavaScript (`background.js`, `content.js`, `popup.js`) to keep the bundle size minimal and avoid build dependencies.
 
-- **HTML & CSS**  
-  The popup interface is built with simple HTML and CSS (`popup.html`, `style.css`), as the UI is intentionally lightweight and does not require a reactive framework.
+- **HTML & CSS** The popup interface is built with simple HTML and CSS (`popup.html`, `style.css`), as the UI is intentionally lightweight and does not require a reactive framework.
 
-- **Chrome Extensions API (Manifest V3)**  
-  Built using the latest Chrome Extensions standard for better performance and stricter permission handling.
+- **Chrome Extensions API (Manifest V3)** Built using the latest Chrome Extensions standard for better performance and stricter permission handling.
 
-- **i18n (Internationalization)**  
-  Multi-language support is provided through the `_locales` system using structured JSON files (supporting 10+ languages).
+- **i18n (Internationalization)** Multi-language support is provided through the `_locales` system using structured JSON files (supporting 10+ languages).
 
 > **Note:** This project does not use TypeScript or front-end frameworks like React. The extension is designed to be lightweight, dependency-free, and easy to maintain without a build step.  
 > This approach also enables contributors to get started quickly without requiring additional tooling or configuration.
@@ -60,9 +56,9 @@ The operational workflow is entirely keyboard-driven for maximum efficiency.
 | Key | Action | Description |
 |:---:|:---|:---|
 | **W** | **Enter Focus Mode** | For playlists: Reloads the video in a standalone player to prevent auto-advancing and ensure stable looping. |
-| **S** | **Start Slicing** | Sets the start-time of the first segment. This action clears all previously defined segments. |
+| **S** | **Start Slicing** | Sets the start-time for a new segment. If the previous segment is complete, it adds a new one without clearing existing slices. |
 | **E** | **End / Add Slice** | Sets the end-time for the current segment. Subsequent presses create a new segment, using the previous end-point as the new start-point. |
-| **R** | **Toggle Loop** | Activates or deactivates looping for the currently selected segment. |
+| **R** | **Toggle Repeat** | Starts looping through the defined slices, beginning with the first. Press again to pause the loop. |
 | **A** | **Previous Slice** | Navigates to the preceding segment in the sequence. |
 | **D** | **Next Slice** | Navigates to the subsequent segment in the sequence. |
 | **Q** | **Quit & Clear** | Deactivates all extension functions and clears all defined segments from memory. |
@@ -79,7 +75,7 @@ Please submit bug reports or feature requests through the [GitHub Issues](https:
 
 ## 🔗 Links
 
-* **Chrome Web Store**: [Slice & Loop for YouTube™](https://chrome.google.com/webstore/detail/slice-loop-for-youtube/abc123def456ghi789jkl)
+* **Chrome Web Store**: [Slice & Loop for YouTube™](https://chrome.google.com/webstore/detail/[YOUR_EXTENSION_ID_HERE])
 * **GitHub Repository**: [https://github.com/songej/youtube_slice_loop](https://github.com/songej/youtube_slice_loop)
 * **Privacy Policy**: [Read our Privacy Policy](PRIVACY_POLICY.md)
 
@@ -87,8 +83,8 @@ Please submit bug reports or feature requests through the [GitHub Issues](https:
 
 | Version | Date       | Key Changes                               |
 |:--------|:-----------|:------------------------------------------|
-| 1.1 | 2025-08-06 | Chrome Web Store initial release.         |
-| 1.0 | 2025-08-04 | Initial project setup and core features.  |
+| 1.1 | 2025-08-07 | Chrome Web Store initial release.        |
+| 1.0 | 2025-08-04 | Initial project setup and core features. |
 
 ## ⚖️ License & Acknowledgements
 
