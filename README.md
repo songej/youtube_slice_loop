@@ -1,12 +1,12 @@
-# YouTube Slice & Loop
+# Slice & Loop for YouTube™
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Current Version](https://img.shields.io/badge/version-v1.0.1-green.svg)](https://github.com/songej/youtube_slice_loop/releases) [![Chrome Web Store](https://img.shields.io/badge/Chrome%20Web%20Store-Coming%20Soon-blue.svg?logo=google-chrome&logoColor=white)](https://chrome.google.com/webstore)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Current Version](https://img.shields.io/badge/version-v1.1-green.svg)](https://github.com/songej/youtube_slice_loop/releases) [![Chrome Web Store](https://img.shields.io/badge/Chrome%20Web%20Store-Coming%20Soon-blue.svg?logo=google-chrome&logoColor=white)](https://chrome.google.com/webstore)
 
-> **Status**: ☑️ Active | **Type**: Chrome Extension | **Updated**: 2025-08-06
+> **Status**: Active | **Type**: Chrome Extension | **Updated**: 2025-08-06
 
 ## 📜 Abstract
 
-YouTube Slice & Loop is a browser utility engineered to enhance practice and learning efficiency on the YouTube platform. It provides users with a keyboard-driven interface to perform precise temporal slicing and looping of video segments. The core objective is to offer a streamlined workflow for detailed analysis and repetition, catering to users in disciplines requiring granular control over video playback, such as music, dance, and language studies. The implementation prioritizes minimal performance overhead and a robust, mouse-free user experience.
+Slice & Loop for YouTube™ is a browser utility engineered to enhance practice and learning efficiency on the YouTube platform. It provides users with a keyboard-driven interface to perform precise temporal slicing and looping of video segments. The core objective is to offer a streamlined workflow for detailed analysis and repetition, catering to users in disciplines requiring granular control over video playback, such as music, dance, and language studies. The implementation prioritizes minimal performance overhead and a robust, mouse-free user experience.
 
 ## 🌟 Showcase
 
@@ -54,19 +54,24 @@ The operational workflow is entirely keyboard-driven for maximum efficiency.
 
 Please submit bug reports or feature requests through the [GitHub Issues](https://github.com/songej/youtube_slice_loop/issues) page. Provide a detailed description of the issue or enhancement proposal.
 
+## ✍️ Author
+
+* **Eunjeong Song**
+    * Homepage: [songej.com](https://songej.com)
+    * LinkedIn: [songej](https://www.linkedin.com/in/songej)
+
 ## 🔗 Links
 
 * **Chrome Web Store**: *To be added upon publication*
 * **GitHub Repository**: [https://github.com/songej/youtube_slice_loop](https://github.com/songej/youtube_slice_loop)
-* **Developer Homepage**: [https://songej.com](https://songej.com)
+* **Privacy Policy**: [Read our Privacy Policy](PRIVACY_POLICY.md)
 
 ## 📑 Version History
 
-| Version | Date       | Description                       |
-|:--------|:-----------|:----------------------------------|
-| v1.0.0  | 2025-08-04 | Initial release.                  |
-| v1.0.1  | 2025-08-05 | Code refactored for stability.    |
-
+| Version | Date       | Key Changes                               |
+|:--------|:-----------|:------------------------------------------|
+| **1.1** | 2025-08-06 | Chrome Web Store initial release.         |
+| **1.0** | 2025-08-04 | Initial project setup and core features.  |
 
 ## ⚖️ License & Acknowledgements
 
@@ -75,4 +80,4 @@ This project is licensed under the **[MIT License](LICENSE)**.
 The "Repeat" icon is from the [Iconoir](https://www.iconfinder.com/icons/12539340/repeat_arrows_re_direction_sign_repeat_sign_icon) set, licensed under **[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)**.
 
 ---
-*This document was last updated on August 6, 2025.*
+*DISCLAIMER: Slice & Loop for YouTube™ is an independent project. It is not affiliated with, sponsored, endorsed, or in any way officially associated with YouTube or Google LLC. YouTube™ is a trademark of Google LLC, and its use is for reference purposes only, indicating compatibility with the service.*
