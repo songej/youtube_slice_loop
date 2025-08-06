@@ -1,57 +1,77 @@
 # Privacy Policy
 
-Effective Date: 2025-08-06
+Effective Date: 2025-08-07
 Version: 1.1
 
 ---
 
 ## 1. Introduction
-Slice & Loop for YouTube™ (Chrome extension) is committed to protecting your privacy. This Privacy Policy explains our practices regarding the data your browser stores when you use our extension.
+Slice & Loop for YouTube (Chrome extension) is committed to protecting your privacy. This Privacy Policy explains our practices regarding the data your browser stores when you use our extension.
 
 ## 2. Data We Do Not Collect or Transmit
-We want to be crystal clear: we do NOT collect, store on our servers, or transmit any of the following data from you:
-- Personal Identifiers: Your name, email address, IP address, or device identifiers.
-- Browse Activity: Your Browse history, what you type, or the content of the pages you visit.
+We want to be crystal clear: we do not collect, store on our servers, or transmit any of the following data from you:
+- Personal Identifiers: Your name, email address, IP address, or device identifiers
+- Browse Activity: Your Browse history, keystrokes, or page contents
 
 All extension activity and data processing occurs locally on your device.
 
 ## 3. Data Stored on Your Device
-Our extension saves data exclusively in your browser's storage. This data is never sent to us or any third party. We use two types of browser storage for different purposes:
+Our extension stores data exclusively in your browser's storage. This data is never transmitted to us or any third party.
 
-- Storage Type: Local Storage (chrome.storage.local)
-  - Data Stored: YouTube Video ID and Segment Times
-  - Purpose of Storage: Remembers the start and end times of the loops you create for a specific YouTube video, so your saved loops automatically load when you revisit that video. This data is not synced across your devices.
+We use two types of browser storage:
 
-- Storage Type: Sync Storage (chrome.storage.sync)
-  - Data Stored: Autoplay-Disable Preference
-  - Purpose of Storage: Saves your choice for the “Always disable playlist autoplay” option. This setting is synced across all Chrome browsers where you are logged in with your Google account, providing a consistent experience.
+- Local Storage (chrome.storage.local)
+  Data Stored: YouTube Video ID and segment start/end times
+  Purpose: Remembers custom loop segments you've created for specific videos
+  Retention: Data is automatically deleted after 30 days or if the number of entries exceeds 5,000
 
-## 4. User Rights and Data Control
-You have complete control over the data stored by this extension. You can delete your data at any time:
-1.  In-Extension Controls
-    - Pressing the Q key deactivates the extension for the current video and removes its associated loop data (local storage).
-    - Starting a new slicing session with the S key also clears previous loop data for that video (local storage).
-    - You can change your “Autoplay Disable” preference (sync storage) at any time from the extension’s popup menu.
-2.  Browser Controls
-    - Uninstalling the extension from Chrome will permanently delete all of its stored data (local and sync).
+- Sync Storage (chrome.storage.sync)
+  Data Stored: Autoplay-disable preference and loop activation state
+  Purpose: Syncs your autoplay and loop settings across devices signed into your Google account
 
-## 5. Third-Party Sharing
-We do NOT share, sell, rent, or otherwise disclose your data with any third parties, as we never have access to it.
+## 4. Extension Permissions and Purpose of Use
+Our extension requires the `*://*.youtube.com/*` host permission to function correctly. Here is why this permission is necessary and how it is used:
 
-## 6. Data Controller
-For any inquiries regarding this policy, you can contact the data controller:
-- Name: Eunjeong Song
-- Email: songej.dev@gmail.com
-- Address: Seoul, South Korea
+- Purpose of Permission: This permission is essential for detecting the video player on a YouTube page, adding the necessary user interface for looping (e.g., the slice markers on the progress bar), and responding to hotkeys (like 'S', 'R', etc.).
+- What We Don't Do With It: We never use this permission to track your viewing history, access your personal information, or interact with your YouTube account data. All functionality is processed locally within your browser and is strictly limited to the core features of the extension.
 
-## 7. Compliance
-We adhere to the principles of major data-protection regulations, including:
+## 5. User Rights and Data Control
+You have full control over your data. You can remove it using the following methods:
+
+1. In-Extension Controls
+   - Press Q: Clears loop data for the current video
+   - Press S: Starts a new loop and removes existing loop data for the current video
+   - Toggle autoplay preference via the popup UI
+
+2. Browser Controls
+   - Uninstalling the extension will permanently delete all stored data
+
+## 6. Automatic Data Cleanup
+To protect your privacy and conserve storage:
+- Loop data older than 30 days is automatically deleted
+- A maximum of 5,000 entries is enforced
+- The extension performs periodic cleanup (typically hourly) using Chrome's alarms API
+
+## 7. Third-Party Sharing
+We do not share, sell, rent, or otherwise disclose your data with third parties. In fact, we never access your data at all.
+
+## 8. Data Controller
+For any inquiries regarding this policy:
+
+Name: Eunjeong Song
+Email: songej.dev@gmail.com
+Address: Seoul, South Korea
+
+## 9. Compliance
+This extension is designed to comply with major data protection regulations:
 - GDPR (EU General Data Protection Regulation)
 - CCPA (California Consumer Privacy Act)
 
-## 8. Changes to This Policy
-We may update this policy from time to time. Notifications of changes will be published on our GitHub repository and will include the new “Effective Date” and version number.
-GitHub repository: https://github.com/songej/youtube_slice_loop/
+We do this by avoiding personal data collection and offering complete user control.
 
-## 9. Contact Us
-If you have questions or concerns about this Privacy Policy, please email us at songej.dev@gmail.com.
+## 10. Changes to This Policy
+We may update this policy from time to time. Changes will be reflected on our GitHub repository with a new version number and effective date.
+GitHub: https://github.com/songej/youtube_slice_loop
+
+## 11. Contact Us
+If you have any questions about this Privacy Policy, please email: songej.dev@gmail.com
