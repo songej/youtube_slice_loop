@@ -1,96 +1,86 @@
 # Slice & Loop for YouTube™
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Current Version](https://img.shields.io/badge/version-v1.1-green.svg)](https://github.com/songej/youtube_slice_loop/releases) [![Chrome Web Store](https://img.shields.io/badge/Chrome%20Web%20Store-Available%20Now-blue.svg?logo=google-chrome&logoColor=white)](https://chrome.google.com/webstore/detail/[YOUR_EXTENSION_ID_HERE])
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Release Version](https://img.shields.io/badge/version-v1.1.0-green.svg)](https://github.com/songej/youtube_slice_loop/releases) [![Chrome Web Store](https://img.shields.io/badge/Chrome%20Web%20Store-Coming%20Soon-blue.svg?logo=google-chrome&logoColor=white)](#)
 
-> **Status**: 🟢 Active | **Type**: 🧩 Chrome Extension | **Updated**: 📅 2025-08-07
+> Project Status: 🟢 Active | Type: 🧩 Chrome Browser Extension
 
-## 📜 Abstract
+## 1. Overview
 
-Slice & Loop for YouTube™ is a browser utility engineered to enhance practice and learning efficiency on the YouTube platform. It provides users with a keyboard-driven interface to perform precise temporal slicing and looping of video segments. The core objective is to offer a streamlined workflow for detailed analysis and repetition, catering to users in disciplines requiring granular control over video playback, such as music, dance, and language studies. The implementation prioritizes minimal performance overhead and a robust, mouse-free user experience.
+Slice & Loop for YouTube™ is a browser extension engineered to enhance practice and learning efficiency on the YouTube platform. It provides a keyboard-driven interface for precise temporal slicing and repeating of video slices. A slice (aka segment/clip) is a user-defined portion of a video. It enables A-B repeat style practice by slicing and repeating video segments, while prioritizing a streamlined, mouse-free experience for music, dance, and language learning.
 
-## 📺 Showcase
+## 2. Key Features
 
-![Showcase](showcase.gif)
+- **Precision Slicing**: Define multiple, high-precision video slices with a single key press.
+- **Keyboard-Centric Workflow**: All core functions are mapped to intuitive hotkeys (`S`, `E`, `R`, `A`, `D`, `Q`, `1-9`) for maximum efficiency.
+- **Seamless Navigation & Repeat**: Instantly navigate and repeat slices with `A`/`D` keys. Toggle repeat mode with `R`. When a video with slices ends, repeat mode automatically starts from the first slice.
+- **Playlist Stability (Focus Mode)**: A dedicated "Focus Mode" (`W` key) reloads a video from a playlist in a standalone player, preventing auto-play from interrupting repeat sessions.
+- **Direct Slice Access**: Jump instantly to the first nine slices using number keys `1-9`.
+- **Error-Preventing Design**: Incomplete slices are automatically discarded at the end of a video to prevent errors, ensuring a smooth transition into repeating.
+- **Autoplay-Disable Toggle**: Conveniently turn off YouTube's "Up next" feature via the extension popup.
+- **Data Persistence & Privacy**: Slices are auto-saved locally in the browser, hashed for privacy, and persisted for 30 days. The extension collects no personal data.
+- **Lightweight & Performant**: Built with VanillaJS and the Manifest V3 standard for minimal impact on browser resources.
 
-## ✨ Key Features
+## 3. Getting Started
 
-* **Temporal Segment Slicing**: Users can define a sequence of video segments (slices) with single key presses, allowing for rapid and precise isolation of desired content.
-* **Keyboard-Centric Interface**: All core functionalities are mapped to keyboard shortcuts (`S`, `E`, `R`, `A`, `D`, `Q`, `W`), eliminating the need for mouse interaction and enabling an efficient workflow.
-* **Playlist Stability (Focus Mode)**: A dedicated "Focus Mode" (`W` key) reloads a video from a playlist in a standalone player. This critical feature prevents YouTube's auto-play from interrupting loop sessions.
-* **Seamless Navigation**: Users can navigate between defined slices (`A`/`D` keys) forwards and backward instantly.
-* **Lightweight & Performant**: Designed to be a lightweight extension with minimal impact on browser resources.
+### Installation
 
-## 👥 Target Audience
+**1. From Chrome Web Store (Recommended)**
+- *Link will be available upon publication.*
 
-This extension is designed for individuals who benefit from the detailed and repetitive study of video material. Use cases include:
-
-* **🎶 Musicians**: Mastering complex musical phrases or transcribing solos.
-* **💃 Dancers**: Drilling and perfecting specific choreographic sequences.
-* **🗣️ Language Learners**: Isolating and repeating spoken content for pronunciation and comprehension.
-* **🎬 Content Creators & Educators**: Creating clips and reviewing material for tutorials or lectures.
-
-## 🧰 Tech Stack
-
-- **JavaScript (Vanilla)** Core logic is implemented using plain JavaScript (`background.js`, `content.js`, `popup.js`) to keep the bundle size minimal and avoid build dependencies.
-
-- **HTML & CSS** The popup interface is built with simple HTML and CSS (`popup.html`, `style.css`), as the UI is intentionally lightweight and does not require a reactive framework.
-
-- **Chrome Extensions API (Manifest V3)** Built using the latest Chrome Extensions standard for better performance and stricter permission handling.
-
-- **i18n (Internationalization)** Multi-language support is provided through the `_locales` system using structured JSON files (supporting 10+ languages).
-
-> **Note:** This project does not use TypeScript or front-end frameworks like React. The extension is designed to be lightweight, dependency-free, and easy to maintain without a build step.  
-> This approach also enables contributors to get started quickly without requiring additional tooling or configuration.
-
-## 🚀 Installation
-
+**2. Manual Installation (for Developers)**
 1.  Clone this repository or download and unzip the source code.
-2.  Open the Chrome browser and navigate to `chrome://extensions`.
-3.  Enable "Developer mode" via the toggle in the top-right corner.
-4.  Click "Load unpacked" and select the project directory.
+2.  Open Chrome and navigate to `chrome://extensions`.
+3.  Enable "Developer mode" in the top-right corner.
+4.  Click "Load unpacked" and select the project's root directory.
 
-## ⌨️ Hotkey Reference
+### Basic Usage
 
-The operational workflow is entirely keyboard-driven for maximum efficiency.
+The workflow is designed to be efficient and entirely keyboard-driven.
 
-| Key | Action | Description |
-|:---:|:---|:---|
-| **W** | **Enter Focus Mode** | For playlists: Reloads the video in a standalone player to prevent auto-advancing and ensure stable looping. |
-| **S** | **Start Slicing** | Sets the start-time for a new segment. If the previous segment is complete, it adds a new one without clearing existing slices. |
-| **E** | **End / Add Slice** | Sets the end-time for the current segment. Subsequent presses create a new segment, using the previous end-point as the new start-point. |
-| **R** | **Toggle Repeat** | Starts looping through the defined slices, beginning with the first. Press again to pause the loop. |
-| **A** | **Previous Slice** | Navigates to the preceding segment in the sequence. |
-| **D** | **Next Slice** | Navigates to the subsequent segment in the sequence. |
-| **Q** | **Quit & Clear** | Deactivates all extension functions and clears all defined segments from memory. |
+| Key   | Action                   | Description                                                                  |
+| :---- | :----------------------- | :--------------------------------------------------------------------------- |
+| **S** | **Start slice** | Sets the start-time for a new slice.                                     |
+| **E** | **End (Chain) slice** | Completes a slice. Pressing `E` again immediately starts the next slice from where the last one ended. This enables rapid, back-to-back slicing. |
+| **R** | **Toggle Repeat** | Starts or stops repeating through the defined slices.                    |
+| **A/D** | **Previous / Next slice** | Moves to the previous (`A`) or next (`D`) slice and begins repeating automatically. |
+| **1-9** | **Jump to slice** | Instantly jumps to a specific slice (1 through 9).                       |
+| **Q** | **Clear all slices** | Deactivates all extension functions and clears all slices for the current video. |
+| **W** | **Enter Focus Mode** | In playlists, reloads the video in a standalone view to prevent auto-advancing. |
 
-## 🐛 Bug Reports & Feature Requests
+## 4. Technical Architecture
 
-Please submit bug reports or feature requests through the [GitHub Issues](https://github.com/songej/youtube_slice_loop/issues) page. Provide a detailed description of the issue or enhancement proposal.
+This extension is built with a focus on performance, security, and maintainability, adhering to modern web standards without external framework dependencies.
 
-## ✍️ Author
+- **Core Logic**: Vanilla JavaScript, compliant with the Manifest V3 standard.
+- **State Management**: The background service worker (`background.js`) manages tab states and global settings, using `chrome.storage.session` for non-persistent data and `chrome.storage.sync` for user preferences. A robust reconciliation process ensures state consistency even after browser restarts.
+- **DOM Interaction**: A single, unified `MutationObserver` monitors the YouTube player, with debouncing and filtering to minimize performance impact. DOM lookups are optimized via an `LRUCache`.
+- **UI Components**: Toasts and overlays render in isolated Shadow DOM trees to prevent style conflicts with the host page.
+- **Security**: Locally stored identifiers (video IDs) are hashed with a device-specific salt using the `SubtleCrypto` API. The extension makes no external network requests.
+- **Asynchronous Processing**: Non-critical tasks are deferred using `requestIdleCallback`, and `async/await` is used for storage and messaging operations.
 
-* **Eunjeong Song**
-    * Homepage: [songej.com](https://songej.com)
-    * LinkedIn: [songej](https://www.linkedin.com/in/songej)
+## 5. Technical Specifications
 
-## 🔗 Links
+- **Slice & Storage Limits**:
+  - Max Slices per Video: 50
+  - Min Slice Duration: 0.5 seconds
+  - Data Persistence: 30 days
+  - Max Total Keys: 3,000
+  - Storage Quota: 5MB (`chrome.storage.local`)
+- **Performance & Optimization**:
+  - MutationObserver Debounce: 150ms
+  - Playlist Check Interval: 10s (foreground), 15s (background)
+  - DOM Cache TTL: 30 seconds
+  - Storage Cleanup: Runs every 60 minutes to purge expired data. Users receive a toast notification when storage usage exceeds 75% and are prompted for manual cleanup at 90%.
+- **Browser Compatibility**: Requires Chrome version 88+ for Manifest V3 support.
 
-* **Chrome Web Store**: [Slice & Loop for YouTube™](https://chrome.google.com/webstore/detail/[YOUR_EXTENSION_ID_HERE])
-* **GitHub Repository**: [https://github.com/songej/youtube_slice_loop](https://github.com/songej/youtube_slice_loop)
-* **Privacy Policy**: [Read our Privacy Policy](PRIVACY_POLICY.md)
+## 6. Project Information
 
-## 📑 Version History
-
-| Version | Date       | Key Changes                               |
-|:--------|:-----------|:------------------------------------------|
-| 1.1 | 2025-08-07 | Chrome Web Store initial release.        |
-| 1.0 | 2025-08-04 | Initial project setup and core features. |
-
-## ⚖️ License & Acknowledgements
-
-This project is licensed under the **[MIT License](LICENSE)**.
-
-An icon used in this extension was created by **khulqi Rosyid** and sourced from [IconFinder](https://www.iconfinder.com/icons/12539385). It is used under the terms of the **[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)** license.
+- **Author**: Eunjeong Song ([Homepage](https://songej.com) / [LinkedIn](https://www.linkedin.com/in/songej))
+- **Source Code**: [https://github.com/songej/youtube_slice_loop](https://github.com/songej/youtube_slice_loop)
+- **Privacy Policy**: [Read our Privacy Policy](PRIVACY_POLICY.md)
+- **License**: MIT License.
+- **Acknowledgements**: Icon by khulqi Rosyid from IconFinder (CC BY 4.0).
 
 ---
-*DISCLAIMER: Slice & Loop for YouTube™ is an independent project. It is not affiliated with, sponsored, endorsed, or in any way officially associated with YouTube or Google LLC. YouTube™ is a trademark of Google LLC, and its use is for reference purposes only, indicating compatibility with the service.*
+
+*DISCLAIMER: Slice & Loop for YouTube™ is an independent project and is not officially associated with YouTube or Google LLC. All trademarks are the property of their respective owners.*
