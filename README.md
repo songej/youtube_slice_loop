@@ -83,4 +83,4 @@ This extension is built with a focus on performance, security, and maintainabili
 
 ---
 
-*DISCLAIMER: Slice & Loop for YouTube™ is an independent project and is not officially associated with YouTube or Google LLC. All trademarks are the property of their respective owners.*
+*DISCLAIMER: Slice & Loop for YouTube™ is an independent project and is not officially associated with YouTube or Google LLC. "YouTube" is a trademark of Google LLC.*
