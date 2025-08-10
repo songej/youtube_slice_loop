@@ -90,6 +90,7 @@ This extension is built with a focus on performance, security, and maintainabili
 - **Source Code**: https://github.com/songej/youtube_slice_loop
 - **Privacy & Legal**:
   - **Privacy Policy**: [Read our Privacy Policy](PRIVACY_POLICY.md)
-  - **License**: This project is licensed under the [MIT License](LICENSE).
+  - **License**: This project is licensed under the [PolyForm Noncommercial License 1.0.0](LICENSE).  
+  This software may be used, copied, modified, and distributed for noncommercial purposes only. Commercial use requires a separate license from the author.
   - **Disclaimer**: Slice & Loop for YouTube™ is an independent project and is not officially associated with YouTube or Google LLC. "YouTube" is a trademark of Google LLC.
 - **Acknowledgements**: Icon by khulqi Rosyid from IconFinder (CC BY 4.0).
