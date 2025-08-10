@@ -78,11 +78,7 @@ The extension is not directed to children under 13 and processes no personal dat
 # 9. Changes to This Policy
 We may update this policy. We’ll update the Effective Date above and document changes in the project's official release notes.
 
-# 10. Open-Source Transparency
-This extension is open source. You can review the code to verify these practices.
-- Source: https://github.com/songej/youtube_slice_loop
-
-# 11. Contact
+# 10. Contact
 Questions about this Privacy Policy:
 - Name: Eunjeong Song
 - Email: songej.dev@gmail.com
