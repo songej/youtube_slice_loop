@@ -49,7 +49,8 @@ This is used to save data for specific videos on a single device.
 2. Sync Storage (`chrome.storage.sync`)
 This is used to sync your general settings across all devices where you are logged into Chrome.
 - Data Stored: An Extension Security Key (salt) synced with your browser profile, used for hashing video identifiers.
-- Purpose: To provide a consistent experience on all your devices. Please note: only this Extension Security Key (salt) is synced, not your actual slice data. This ensures that if you use the extension on another device, the same video will have the same hashed identifier. Your saved slices for that video, however, will remain local to each device and are not synced.
+- Purpose: To provide a consistent experience on all your devices. 
+- Please note: only this Extension Security Key (salt) is synced, not your actual slice data. This ensures that if you use the extension on another device, the same video will have the same hashed identifier. Your saved slices for that video, however, will remain local to each device and are not synced.
 
 # 4. Permissions and Purpose of Use
 The extension requests only the permissions needed to operate:
