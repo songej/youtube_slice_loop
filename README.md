@@ -34,7 +34,7 @@ Slice & Loop for YouTube™ is a browser extension engineered to enhance practic
 3.  Enable "Developer mode" in the top-right corner.
 4.  Click "Load unpacked" and select the project's root directory.
 
-### Quick Start: Creating Your First Loop
+### Quick Start
 
 1. Make slices — Press S to Start → E to End
 2. Chain slices — Press E again
