@@ -36,10 +36,10 @@ Slice & Loop for YouTube™ is a browser extension engineered to enhance practic
 
 ### Quick Start: Creating Your First Loop
 
-1.  **Find a section** you want to practice and press the **`S`** key to **S**tart the slice.
-2.  Let the video play to your desired endpoint and press the **`E`** key to **E**nd the slice.
-3.  That's it! Now press the **`R`** key to **R**epeat your new loop.
-4.  Created multiple slices? Use the **`A`** and **`D`** keys to **navigate** between them.
+1. Make slices — Press S to Start → E to End
+2. Chain slices — Press E again
+3. Repeat slices — Press R to toggle repeat
+4. Navigate slices — Press A / D to jump
 
 ### Basic Usage
 
@@ -95,4 +95,4 @@ This extension is built with a focus on performance, security, and maintainabili
   - **Privacy Policy**: [Read our Privacy Policy](PRIVACY_POLICY.md)
   - **License**: This project is licensed under the [PolyForm Noncommercial License 1.0.0](LICENSE). This software may be used, copied, modified, and distributed for noncommercial purposes only. Commercial use requires a separate license from the author.
   - **Disclaimer**: Slice & Loop for YouTube™ is an independent project and is not officially associated with YouTube or Google LLC. "YouTube" is a trademark of Google LLC.
-- **Acknowledgements**: Icon by khulqi Rosyid from IconFinder (CC BY 4.0).
+- **Acknowledgements**: Icon by [khulqi Rosyid](https://www.iconfinder.com/khulqi-rosyid) from IconFinder ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)).
