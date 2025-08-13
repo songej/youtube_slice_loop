@@ -1,7 +1,7 @@
 # PRIVACY POLICY
 
-Effective Date: 2025-08-12
-Version: 1.1.0
+- Effective Date: 2025-08-12
+- Version: 1.1.0
 
 Our Promise: We do not collect, store, or share any of your personal data. Everything happens on your computer.
 
@@ -28,12 +28,12 @@ The extension stores data only on your device via the Chrome Storage API. Nothin
 To provide its features, the extension stores:
 
 Data Category: Your Saved Slices
-Storage Location: Your computer's local browser storage (`chrome.storage.local`)
-Purpose: To save the start and end times of the video segments you create. This allows the extension to remember your slices when you revisit a video.
+- Storage Location: Your computer's local browser storage (`chrome.storage.local`)
+- Purpose: To save the start and end times of the video segments you create. This allows the extension to remember your slices when you revisit a video.
 
 Data Category: Extension Security Key (salt)
-Storage Location: Your synced browser storage (`chrome.storage.sync`)
-Purpose: To save an Extension Security Key (salt) for hashing video identifiers, which is used for privacy. This key syncs across your logged-in devices to ensure a consistent experience.
+- Storage Location: Your synced browser storage (`chrome.storage.sync`)
+- Purpose: To save an Extension Security Key (salt) for hashing video identifiers, which is used for privacy. This key syncs across your logged-in devices to ensure a consistent experience.
 
 Storage Details
 
@@ -41,15 +41,15 @@ The extension uses two types of local browser storage:
 
 1. Local Storage (`chrome.storage.local`)
 This is used to save data for specific videos on a single device.
-Data Stored: Hashed video identifiers and the start/end times for each slice.
-Purpose: To remember your saved slices when you revisit a video.
-Data Retention: Data is automatically cleared if it's older than 30 days or if the total number of entries exceeds 3,000.
-Storage Limit: Up to 5 MB. The extension will notify you when storage usage is high.
+- Data Stored: Hashed video identifiers and the start/end times for each slice.
+- Purpose: To remember your saved slices when you revisit a video.
+- Data Retention: Data is automatically cleared if it's older than 30 days or if the total number of entries exceeds 3,000.
+- Storage Limit: Up to 5 MB. The extension will notify you when storage usage is high.
 
 2. Sync Storage (`chrome.storage.sync`)
 This is used to sync your general settings across all devices where you are logged into Chrome.
-Data Stored: An Extension Security Key (salt) synced with your browser profile, used for hashing video identifiers.
-Purpose: To provide a consistent experience on all your devices. Please note: only this Extension Security Key (salt) is synced, not your actual slice data. This ensures that if you use the extension on another device, the same video will have the same hashed identifier. Your saved slices for that video, however, will remain local to each device and are not synced.
+- Data Stored: An Extension Security Key (salt) synced with your browser profile, used for hashing video identifiers.
+- Purpose: To provide a consistent experience on all your devices. Please note: only this Extension Security Key (salt) is synced, not your actual slice data. This ensures that if you use the extension on another device, the same video will have the same hashed identifier. Your saved slices for that video, however, will remain local to each device and are not synced.
 
 # 4. Permissions and Purpose of Use
 The extension requests only the permissions needed to operate:
